@@ -4,17 +4,25 @@
 
 # Papers
 
-
-
-## 如何实现ChatGPT的平替
+## PEFT (Parameter Efficient Fine-Tuning)
 
 
 
-## 如何往ChatGPT中注入知识
+## Plug-And-Play
 
 
 
 ## 如何评估LLMs
+
+
+
+## LLM带来的新方向
+
+
+
+## Model Explanation
+
+> 在模型中加入可解释性模块
 
 
 
@@ -26,7 +34,22 @@
 
 
 
+# Tutorials
+
+如何实现ChatGPT的平替
+
+
+
 # Resources
+
+
+
+## Data
+
+
+
+## Models
+
 
 
 
