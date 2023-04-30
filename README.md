@@ -1,16 +1,34 @@
 [TOC]
 
+[重要论文的总结](https://docs.google.com/presentation/d/13k5cs4p_OmMKkNB9YVuF2CkzZ3PTwUV5bcAIHL4sqjk/edit?usp=sharing)
+
 # Papers
+
+
 
 ## 如何实现ChatGPT的平替
 
+
+
 ## 如何往ChatGPT中注入知识
+
+
 
 ## 如何评估LLMs
 
+
+
 # Blogs
 
+
+
 # Videos
+
+
+
+# Resources
+
+
 
 # TODO
 
