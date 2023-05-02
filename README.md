@@ -77,9 +77,11 @@
      - automatic evaluation using GPT-4 feedback,  [让GPT-4给结果从1-10打分]
      - **ROUGE-L** on un-natural instructions
    
-2. 
+2.  `Holistic Evaluation of Language Models` arxiv 2023
+   Liang P, Bommasani R, Lee T, et al. [[paper](https://arxiv.org/pdf/2211.09110.pdf)] [[project](https://github.com/stanford-crfm/helm)]
 
-
+3. `Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models` arxiv 2023
+   Aarohi Srivastava, Abhinav Rastogi, Abhishek Rao, et al. [[paper](https://arxiv.org/abs/2206.04615)] [[project](https://github.com/google/BIG-bench)]
 
 ## LLM带来的新方向
 
