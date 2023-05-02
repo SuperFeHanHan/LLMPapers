@@ -12,6 +12,14 @@
 
 # Papers
 
+## Tuning Method
+
+`Self-Instruct: Aligning Language Model with Self Generated Instructions` arXiv 2022
+
+*Wang, Yizhong and Kordi, Yeganeh and Mishra, Swaroop and Liu, Alisa and Smith, Noah A. and Khashabi, Daniel and Hajishirzi, Hannaneh*  [[pdf](https://arxiv.org/pdf/2212.10560.pdf)] [[project](https://github.com/yizhongw/self-instruct)]
+
+
+
 ## PEFT (Parameter Efficient Fine-Tuning)
 
 
