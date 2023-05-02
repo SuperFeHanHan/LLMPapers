@@ -20,6 +20,10 @@
 
    Model Size: 70M, 160M, 410M, 1B, 1.4B, 2.8B, 6.9B, 12B
 
+3. `Opt-iml: Scaling language model instruction meta learning through the lens of generalization.` arxiv 202
+   Srinivasan Iyer, Xi Victoria Lin, Ramakanth Pasunuru, Todor Mihaylov, Da ́niel Simig, Ping Yu, Kurt Shuster, Tianlu Wang, Qing Liu, Punit Singh Koura, et al. [[paper](https://arxiv.org/abs/2212.12017)]
+4. 
+
 
 
 ## Method to Get Training Data
@@ -31,6 +35,9 @@
 
 
 ## 实现ChatGPT的平替
+
+> 主要跟Instruction Tuning有关，即构建 Instruction + N个Input-output examples。
+> Alpaca, Vicuna, Dolly都没有使用RLHF
 
 1. `Alpaca: A Strong, Replicable Instruction-Following Model` 2023
    Rohan Taori, Ishaan Gulrajani, Tianyi Zhang, Yann Dubois, Xuechen Li, Carlos Guestrin, Percy Liang, Tatsunori B. Hashimoto  [[blog](https://crfm.stanford.edu/2023/03/13/alpaca.html)] [[project](https://github.com/tatsu-lab/stanford_alpaca)]
@@ -61,6 +68,16 @@
 
 1. `Instruction Tuning with GPT-4` arxiv 2023
    Peng, Baolin, Li Chunyuan , He Pengcheng , Galley Michel , Gao Jianfeng [[blog](https://instruction-tuning-with-gpt-4.github.io/)] [[paper](https://arxiv.org/pdf/2304.03277.pdf)] [[project](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM)]
+   
+   基于LLaMA 7B进行SFT，基于OPT 1.3B训练得到Reward Model。
+   
+   - Instruction效果的评估，使用GPT-4生成Instruction-following data
+   - 3种评估指标：
+     - human evaluation on three alignment criteria: **Helpfulness** (比如越正确、越相关，答案可能就越有帮助), **Honesty**）（是否有虚假信息）, **Harmlessness**（是否有仇恨、暴力的内容）
+     - automatic evaluation using GPT-4 feedback,  [让GPT-4给结果从1-10打分]
+     - **ROUGE-L** on un-natural instructions
+   
+2. 
 
 
 
@@ -100,6 +117,8 @@
 ## Data
 
 - [InstructionZoo](https://github.com/FreedomIntelligence/InstructionZoo): 各种Instruction-Tuning的数据集
+
+- [awesome-chatgpt-dataset](https://github.com/voidful/awesome-chatgpt-dataset/): 各种Instruction-Tuning的数据集
 
 - [Alpaca Training Data](https://github.com/tatsu-lab/stanford_alpaca/blob/main/alpaca_data.json)
 
