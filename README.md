@@ -5,18 +5,47 @@
 
 
 - [Papers](#Papers)
-- [Blogs](#Blogs)
-- [Videos](#Videos)
 
 
 
 # Papers
 
-## Tuning Method
+## Base Models
 
-`Self-Instruct: Aligning Language Model with Self Generated Instructions` arXiv 2022
+1. `LLaMA: Open and Efficient Foundation Language Models.` arxiv 2023
+   Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, Naman Goyal, Eric Hambro, Faisal Azhar, Aurelien Rodriguez, Armand Joulin, Edouard Grave, Guillaume Lample. [[pdf]](https://arxiv.org/abs/2302.13971v1)
 
-*Wang, Yizhong and Kordi, Yeganeh and Mishra, Swaroop and Liu, Alisa and Smith, Noah A. and Khashabi, Daniel and Hajishirzi, Hannaneh*  [[pdf](https://arxiv.org/pdf/2212.10560.pdf)] [[project](https://github.com/yizhongw/self-instruct)]
+2. `Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling` 2023
+   Stella Biderman, Hailey Schoelkopf, Quentin Anthony, Herbie Bradley, Kyle O'Brien, Eric Hallahan, Mohammad Aflah Khan, Shivanshu Purohit, USVSN Sai Prashanth, Edward Raff, Aviya Skowron, Lintang Sutawika, Oskar van der Wal [[paper](https://arxiv.org/abs/2304.01373)] [[project](https://github.com/EleutherAI/pythia)]
+
+   Model Size: 70M, 160M, 410M, 1B, 1.4B, 2.8B, 6.9B, 12B
+
+
+
+## Method to Get Training Data
+
+1. `Self-Instruct: Aligning Language Model with Self Generated Instructions` arXiv 2022
+   *Wang, Yizhong , Kordi, Yeganeh , Mishra, Swaroop , Liu, Alisa , Smith, Noah A. , Khashabi, Daniel , Hajishirzi, Hannaneh*  [[pdf](https://arxiv.org/pdf/2212.10560.pdf)] [[project](https://github.com/yizhongw/self-instruct)]
+2. 
+
+
+
+## 实现ChatGPT的平替
+
+1. `Alpaca: A Strong, Replicable Instruction-Following Model` 2023
+   Rohan Taori, Ishaan Gulrajani, Tianyi Zhang, Yann Dubois, Xuechen Li, Carlos Guestrin, Percy Liang, Tatsunori B. Hashimoto  [[blog](https://crfm.stanford.edu/2023/03/13/alpaca.html)] [[project](https://github.com/tatsu-lab/stanford_alpaca)]
+   基于LLaMa训练的模型，训练数据来自于text-davinci-003的标注
+
+2. `Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality` 2023
+   Chiang, Wei-Lin, Li, Zhuohan, Lin, Zi, Sheng, Ying, Wu, Zhanghao, Zhang, Hao, Zheng, Lianmin, Zhuang, Siyuan, Zhuang, Yonghao, Gonzalez, Joseph E., Stoica, Ion, Xing, Eric P. [[blog](https://vicuna.lmsys.org/)] [[project](https://github.com/lm-sys/FastChat)]
+   基于LLaMa训练的模型，训练数据来自于chatgpt的标注(share gpt)
+
+3. `Free Dolly: Introducing the World's First Truly Open Instruction-Tuned LLM`
+   Mike Conover, Matt Hayes, Ankit Mathur, Xiangrui Meng, Jianwei Xie, Jun Wan, Sam Shah, Ali Ghodsi, Patrick Wendell, Matei Zaharia, Reynold Xin [[blog](https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm)] [[project](https://github.com/databrickslabs/dolly)]
+
+   基于Pythia 12b，训练数据来自于DataBricks员工的标注 `databricks-dolly-15k`
+
+4. 
 
 
 
@@ -28,7 +57,10 @@
 
 
 
-## 如何评估LLMs
+## 评估LLMs
+
+1. `Instruction Tuning with GPT-4` arxiv 2023
+   Peng, Baolin, Li Chunyuan , He Pengcheng , Galley Michel , Gao Jianfeng [[blog](https://instruction-tuning-with-gpt-4.github.io/)] [[paper](https://arxiv.org/pdf/2304.03277.pdf)] [[project](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM)]
 
 
 
@@ -42,31 +74,44 @@
 
 
 
-# Blogs
+## 大模型训练的技巧
 
+硬件层面
 
+-  **Flash Attention** (Dao et al., 2022)
 
-# Videos
+模型层面
 
+- **rotary embeddings**  (Su et al. 2021)
 
-
-## Hung-yi Lee
-
-
+- **parallelized attention and feedforward technique** (Wang & Komatsuzaki 2021)
+- **untied embedding / unembedding matrices** (Belrose et al., 2023)
 
 
 
 # Tutorials
 
-如何实现ChatGPT的平替
-
 
 
 # Resources
 
-
+- [LLM Zoo](https://github.com/FreedomIntelligence/LLMZoo): 
 
 ## Data
+
+- [InstructionZoo](https://github.com/FreedomIntelligence/InstructionZoo): 各种Instruction-Tuning的数据集
+
+- [Alpaca Training Data](https://github.com/tatsu-lab/stanford_alpaca/blob/main/alpaca_data.json)
+
+- [Vicuna Training Data: ShareGPT](https://github.com/lm-sys/FastChat/issues/90)
+
+- Dolly 2.0 Training Data: [databricks-dolly-15k](https://github.com/databrickslabs/dolly/tree/master/data)
+
+
+
+## Online Demo
+
+- [Vicuna, Koala, FastChat-T5, OpenAssistant, ChatGLM, StableLM, Alpaca, LLaMa, Dolly](https://chat.lmsys.org/)
 
 
 
