@@ -58,6 +58,37 @@
 
 ## PEFT (Parameter Efficient Fine-Tuning)
 
+1. ![LoRA](https://img.shields.io/badge/LoRA-blue)
+    `LoRA: Low-Rank Adaptation of Large Language Models` 2021
+    Edward J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen [[pdf](https://arxiv.org/abs/2106.09685)]
+2. ![Prefix Tuning](https://img.shields.io/badge/PrefixTuning-blue) 
+
+   `Prefix-Tuning: Optimizing Continuous Prompts for Generation` ACL 2021 
+   Xiang Lisa Li, Percy Liang [[pdf](https://aclanthology.org/2021.acl-long.353/)]
+
+   `P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks` ACL 2022
+   Xiao Liu, Kaixuan Ji, Yicheng Fu, Weng Lam Tam, Zhengxiao Du, Zhilin Yang, Jie Tang [[pdf](https://arxiv.org/abs/2110.07602)]
+3. ![P-Tuning](https://img.shields.io/badge/PTuning-blue) 
+
+   `GPT Understands, Too`  arxiv 2021
+   Xiao Liu, Yanan Zheng, Zhengxiao Du, Ming Ding, Yujie Qian, Zhilin Yang, Jie Tang [[pdf](https://arxiv.org/abs/2103.10385)]
+4. ![Prompt Tuning](https://img.shields.io/badge/PromptTuning-blue) 
+
+   `The Power of Scale for Parameter-Efficient Prompt Tuning` EMNLP2021
+   Brian Lester, Rami Al-Rfou, Noah Constant [[pdf](https://arxiv.org/abs/2104.08691)]
+5. ![AdaLoRA](https://img.shields.io/badge/AdaLoRA-blue) 
+
+   `Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning` ICLR2023
+   Qingru Zhang, Minshuo Chen, Alexander Bukharin, Pengcheng He, Yu Cheng, Weizhu Chen, Tuo Zhao [[pdf](https://arxiv.org/abs/2303.10512)]
+
+6. Adapter
+	- AdapterH
+	- AdapterL
+	- AdapterP
+	- AdapterD
+7. PPT
+7. BitFit
+
 
 
 ## Plug-And-Play
@@ -116,6 +147,7 @@
    Yongliang Shen, Kaitao Song, Xu Tan, Dongsheng Li, Weiming Lu, Yueting Zhuang. [[paper](https://arxiv.org/pdf/2303.17580.pdf)] [[project](https://github.com/microsoft/JARVIS)]
 
 
+
 # Tutorials
 
 
@@ -123,6 +155,7 @@
 # Resources
 
 - [LLM Zoo](https://github.com/FreedomIntelligence/LLMZoo): 
+- [ChatPiXiu](https://github.com/catqaq/ChatPiXiu): ChatGPT开源平替及领域适应
 
 ## Data
 
@@ -149,6 +182,15 @@
 
 
 
+
+## Tools
+
+- [[peft](https://github.com/huggingface/peft)] from Huggingface🤗: 实现了LoRA, Prefix Tuning, P-Tuning, Prompt Tuning和AdaLoRA。
+- 
+
+
+
+
 # TODO
 
 Decoupling Knowledge From Memorization Retrieval-augmented Prompt Learning
@@ -162,3 +204,11 @@ Decoupling Knowledge From Memorization Retrieval-augmented Prompt Learning
 `Language Models as Knowledge Bases?` EMNLP 2019.
 
 *Fabio Petroni, Tim Rocktaschel, Patrick Lewis, Anton Bakhtin, Yuxiang Wu, Alexander H. Miller, Sebastian Riedel.* 2019.9 [[pdf](https://arxiv.org/abs/1909.01066)] [[project](https://arxiv.org/abs/1909.01066)]
+
+![](https://img.shields.io/badge/T5-blue) The abbreviation of the work.
+
+![](https://img.shields.io/badge/Continuous_Template-red) The key features in terms of prompt learning used in the work.
+
+![](https://img.shields.io/badge/Generation-brown) The mainly explored task of the work.
+
+![](https://img.shields.io/badge/Analysis-green) The mainly explored property of prompt learning methods in the work.
