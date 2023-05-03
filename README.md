@@ -106,6 +106,8 @@
 - **parallelized attention and feedforward technique** (Wang & Komatsuzaki 2021)
 - **untied embedding / unembedding matrices** (Belrose et al., 2023)
 
+## Applications of LLMs
+
 
 
 # Tutorials
