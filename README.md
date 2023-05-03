@@ -64,7 +64,7 @@
 
 
 
-## 评估LLMs
+## Evaluating LLMs
 
 1. `Instruction Tuning with GPT-4` arxiv 2023
    Peng, Baolin, Li Chunyuan , He Pengcheng , Galley Michel , Gao Jianfeng [[blog](https://instruction-tuning-with-gpt-4.github.io/)] [[paper](https://arxiv.org/pdf/2304.03277.pdf)] [[project](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM)]
@@ -85,7 +85,7 @@
 
 4. `PandaLM: Reproducible and Automated Language Model Assessment` GitHub 2023
    Wang Yidong, Yu Zhuohao, Zeng Zhengran, Yang Linyi, Heng Qiang, Wang Cunxiang, Chen Hao, Jiang Chaoya, Xie Rui, Wang Jindong, Xie Xing, Ye Wei, Zhang Shikun and Zhang Yue. [[project](https://github.com/WeOpenML/PandaLM)]
-   
+
 
 ## LLM带来的新方向
 
