@@ -107,7 +107,9 @@
 - **untied embedding / unembedding matrices** (Belrose et al., 2023)
 
 ## Applications of LLMs
-
+- [AutoGPT](https://github.com/Significant-Gravitas/Auto-GPT)
+- `HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in HuggingFace` arxiv 2023
+   Yongliang Shen, Kaitao Song, Xu Tan, Dongsheng Li, Weiming Lu, Yueting Zhuang. [[paper](https://arxiv.org/pdf/2303.17580.pdf)] [[project](https://github.com/microsoft/JARVIS)]
 
 
 # Tutorials
