@@ -117,11 +117,40 @@
      |      | 多选分类                  | CCPM, C3               |
      |      | 句子间分类(Sentence Pair) | LCQMC, CMNLI, OCNLI    |
 
-7. Adapter
-  - AdapterH：原始的Adapter
-  - AdapterL
-  - AdapterP
-  - AdapterD
+7. ![Adapter家族](https://img.shields.io/badge/Adapter家族-blue)列表：
+	
+	  - ![AdapterH](https://img.shields.io/badge/AdapterH-blue) (最原始的Adapter)
+	    `Parameter-Efficient Transfer Learning for NLP` ICML 2019
+	    Neil Houlsby, Andrei Giurgiu, Stanislaw Jastrzebski, Bruna Morrone, Quentin de Laroussilhe, Andrea Gesmundo, Mona Attariyan, Sylvain Gelly [[pdf](https://arxiv.org/abs/1902.00751)]
+	    模型：BERT，任务：GLUE，17个其他的classification tasks和SQuAD
+	  - ![AdapterL](https://img.shields.io/badge/AdapterL-blue)
+	    `Exploring Versatile Generative Language Model Via Parameter-Efficient Transfer Learning` EMNLP 2020
+	    Zhaojiang Lin, Andrea Madotto, Pascale Fung [[pdf](https://aclanthology.org/2020.findings-emnlp.41/)]
+	    除了训练Adapter，还训练对应的Task Embedding用于加在输入上。
+	    模型：GPT2-small，任务：
+	    - Chit-chat based Dialogue(**DLG**): PersonaChat
+	
+	    - **NMT**: IWSLT German-English
+	
+	    - Summarization (**SUM**): CNN/Daily-Mail
+	
+	    - Conversational QA (**CQA**): CoQA
+	
+	    - (**NLG**): E2E NLG-Challenge(2019)
+	
+	  - ![AdapterP](https://img.shields.io/badge/AdapterP-blue) 
+	    `AdapterFusion: Non-Destructive Task Composition for Transfer Learning` EACL 2021
+	    Jonas Pfeiffer, Aishwarya Kamath, Andreas Rücklé, Kyunghyun Cho, Iryna Gurevych [[pdf](https://aclanthology.org/2021.eacl-main.39.pdf)]
+	    模型：BERT-base-uncased，任务：
+	    - **Commonsense Reasoning**: Hellaswag, Winogrande, CosmosQA, CSQA, SocialQA
+	    - **Sentiment Analysis**: IMDb, SST
+	    - **Natural Language Inference**:MNLI, RTE, CB, SciTail, SICK
+	    - **Sentence Relatedness**: MRPC, QQP, Arugment, BoolQ
+	
+	  - ![AdapterD](https://img.shields.io/badge/AdapterD-blue)
+	    `AdapterDrop: On the Efficiency of Adapters in Transformers` EMNLP2021
+	    Andreas Rücklé, Gregor Geigle, Max Glockner, Tilman Beck, Jonas Pfeiffer, Nils Reimers, Iryna Gurevych [[pdf](https://arxiv.org/abs/2010.11918)]
+	
 
 
 
