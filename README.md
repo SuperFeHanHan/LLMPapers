@@ -59,35 +59,57 @@
 ## PEFT (Parameter Efficient Fine-Tuning)
 
 1. ![LoRA](https://img.shields.io/badge/LoRA-blue)
-    `LoRA: Low-Rank Adaptation of Large Language Models` 2021
-    Edward J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen [[pdf](https://arxiv.org/abs/2106.09685)]
+     `LoRA: Low-Rank Adaptation of Large Language Models` 2021
+       Edward J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen [[pdf](https://arxiv.org/abs/2106.09685)]
+     模型：RoBERTa, DeBERTa， 任务：GLUE
+     模型：GPT2 M/L， 任务：E2E NLG, WebNLG, DART
+     模型：GPT3 175B，任务：WikiSQL, MNLI-m, SAMSum
+     做了Low-data Setting的情况
+
 2. ![Prefix Tuning](https://img.shields.io/badge/PrefixTuning-blue) 
 
    `Prefix-Tuning: Optimizing Continuous Prompts for Generation` ACL 2021 
    Xiang Lisa Li, Percy Liang [[pdf](https://aclanthology.org/2021.acl-long.353/)]
+   模型：GPT2 M/L, BART L，任务：E2E, WebNLG, DART, XSUM (Summarization)
+   **每一层**都加了若干个hidden states作为参数。
 
-   `P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks` ACL 2022
+   `P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks` ACL 2022                         
    Xiao Liu, Kaixuan Ji, Yicheng Fu, Weng Lam Tam, Zhengxiao Du, Zhilin Yang, Jie Tang [[pdf](https://arxiv.org/abs/2110.07602)]
+   **每一层**都加了若干个hidden states作为参数。
+   模型：BERT (335M), RoBERTa (355M), GLM (2B,10B)，任务：SuperGLUE
+   模型：BERT, RoBERTa, DeBERTa (750M)，任务：
+
+   - **NER**: CoNLL03, OntoNotes 5.0, CoNLL04
+   - **Extractive QA**: SQuAD 1.1, SQuAD 2.0
+   - **SRL (Semantic Role Labeling)**: CoNLL12, CoNLL05 WSJ, CoNLL05 Brown
+
 3. ![P-Tuning](https://img.shields.io/badge/PTuning-blue) 
 
    `GPT Understands, Too`  arxiv 2021
    Xiao Liu, Yanan Zheng, Zhengxiao Du, Ming Ding, Yujie Qian, Zhilin Yang, Jie Tang [[pdf](https://arxiv.org/abs/2103.10385)]
+   模型：BERT, RoBERTa, GHT2-medium, GPT2-xl, MegatronLM，任务：LAMA, SuperGLUE
+   在**Word Embedding**层面使用Coninuous Prompts，离散token和连续提示进行了混合。
+
 4. ![Prompt Tuning](https://img.shields.io/badge/PromptTuning-blue) 
 
    `The Power of Scale for Parameter-Efficient Prompt Tuning` EMNLP2021
    Brian Lester, Rami Al-Rfou, Noah Constant [[pdf](https://arxiv.org/abs/2104.08691)]
+   模型：T5，任务：SuperGLUE
+   在**Word Embedding**层面使用Coninuous Prompts，考虑了同时训练多个任务的情况
+
 5. ![AdaLoRA](https://img.shields.io/badge/AdaLoRA-blue) 
 
    `Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning` ICLR2023
    Qingru Zhang, Minshuo Chen, Alexander Bukharin, Pengcheng He, Yu Cheng, Weizhu Chen, Tuo Zhao [[pdf](https://arxiv.org/abs/2303.10512)]
 
 6. Adapter
-	- AdapterH
-	- AdapterL
-	- AdapterP
-	- AdapterD
+  - AdapterH：原始的Adapter
+  - AdapterL
+  - AdapterP
+  - AdapterD
+
 7. PPT
-7. BitFit
+7. PEFT统一框架
 
 
 
@@ -190,6 +212,10 @@
 
 
 
+# 参考
+[【OpenLLM 007】小参数撬动大模型-万字长文全面解读PEFT参数高效微调技术](https://zhuanlan.zhihu.com/p/625502729)
+
+
 
 # TODO
 
@@ -198,6 +224,10 @@ Decoupling Knowledge From Memorization Retrieval-augmented Prompt Learning
 [神奇LLM引擎上线：帮你把GPT-3直接调成ChatGPT](https://mp.weixin.qq.com/s/eBFjLfyLycdMIF6-ucgy1w)
 
 [清华唐杰教授：从千亿模型到ChatGPT的⼀点思考](https://mp.weixin.qq.com/s/25cxLdYd37DHw6-UpZlayw)
+
+
+
+[Prompt-Tuning——深度解读一种新的微调范式](https://zhuanlan.zhihu.com/p/619566088)
 
 # Else
 
