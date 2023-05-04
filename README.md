@@ -133,8 +133,12 @@
 2.  `Holistic Evaluation of Language Models` arxiv 2023
    Liang P, Bommasani R, Lee T, et al. [[paper](https://arxiv.org/pdf/2211.09110.pdf)] [[project](https://github.com/stanford-crfm/helm)]
 
+
+
 3. `Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models` arxiv 2023
    Aarohi Srivastava, Abhinav Rastogi, Abhishek Rao, et al. [[paper](https://arxiv.org/abs/2206.04615)] [[project](https://github.com/google/BIG-bench)]
+
+   The Beyond the Imitation Game Benchmark (BIG-bench) is a collaborative benchmark intended to probe large language models and extrapolate their future capabilities. Big-bench include more than 200 tasks.
 
 4. `PandaLM: Reproducible and Automated Language Model Assessment` GitHub 2023
    Wang Yidong, Yu Zhuohao, Zeng Zhengran, Yang Linyi, Heng Qiang, Wang Cunxiang, Chen Hao, Jiang Chaoya, Xie Rui, Wang Jindong, Xie Xing, Ye Wei, Zhang Shikun and Zhang Yue. [[project](https://github.com/WeOpenML/PandaLM)]
