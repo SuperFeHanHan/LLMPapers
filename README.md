@@ -66,7 +66,12 @@
      模型：GPT3 175B，任务：WikiSQL, MNLI-m, SAMSum
      做了Low-data Setting的情况
 
-2. ![Prefix Tuning](https://img.shields.io/badge/PrefixTuning-blue) 
+2. ![AdaLoRA](https://img.shields.io/badge/AdaLoRA-blue) 
+
+     `Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning` ICLR2023
+     Qingru Zhang, Minshuo Chen, Alexander Bukharin, Pengcheng He, Yu Cheng, Weizhu Chen, Tuo Zhao [[pdf](https://arxiv.org/abs/2303.10512)] ==TODO==
+
+3. ![Prefix Tuning](https://img.shields.io/badge/PrefixTuning-blue) 
 
    `Prefix-Tuning: Optimizing Continuous Prompts for Generation` ACL 2021 
    Xiang Lisa Li, Percy Liang [[pdf](https://aclanthology.org/2021.acl-long.353/)]
@@ -83,33 +88,50 @@
    - **Extractive QA**: SQuAD 1.1, SQuAD 2.0
    - **SRL (Semantic Role Labeling)**: CoNLL12, CoNLL05 WSJ, CoNLL05 Brown
 
-3. ![P-Tuning](https://img.shields.io/badge/PTuning-blue) 
+4. ![P-Tuning](https://img.shields.io/badge/PTuning-blue) 
 
    `GPT Understands, Too`  arxiv 2021
    Xiao Liu, Yanan Zheng, Zhengxiao Du, Ming Ding, Yujie Qian, Zhilin Yang, Jie Tang [[pdf](https://arxiv.org/abs/2103.10385)]
    模型：BERT, RoBERTa, GHT2-medium, GPT2-xl, MegatronLM，任务：LAMA, SuperGLUE
    在**Word Embedding**层面使用Coninuous Prompts，离散token和连续提示进行了混合。
 
-4. ![Prompt Tuning](https://img.shields.io/badge/PromptTuning-blue) 
+5. ![Prompt Tuning](https://img.shields.io/badge/PromptTuning-blue) 
 
    `The Power of Scale for Parameter-Efficient Prompt Tuning` EMNLP2021
    Brian Lester, Rami Al-Rfou, Noah Constant [[pdf](https://arxiv.org/abs/2104.08691)]
    模型：T5，任务：SuperGLUE
    在**Word Embedding**层面使用Coninuous Prompts，考虑了同时训练多个任务的情况
 
-5. ![AdaLoRA](https://img.shields.io/badge/AdaLoRA-blue) 
+6. ![PPT](https://img.shields.io/badge/PPT-blue)
+     `PPT: Pre-trained Prompt Tuning for Few-shot Learning`  ACL 2022
+     Yuxian Gu, Xu Han, Zhiyuan Liu, Minlie Huang [[pdf](https://arxiv.org/abs/2109.04332)]
+     可以看成 Pretraining + Prompt Tuning
+     模型 T5-XXL (11B)，mT5-XXL，CPM-2，任务：主要针对多选项分类(Multiple-Choice Classification)
 
-   `Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning` ICLR2023
-   Qingru Zhang, Minshuo Chen, Alexander Bukharin, Pengcheng He, Yu Cheng, Weizhu Chen, Tuo Zhao [[pdf](https://arxiv.org/abs/2303.10512)]
+     | 语言 | 类别                      | 数据集                 |
+     | ---- | ------------------------- | ---------------------- |
+     | 英语 | 单句话分类                | SST-2, SST-5, YahooAns |
+     |      | 多选分类                  | RACE-m, RACE-h         |
+     |      | 句子间分类(Sentence Pair) | BoolQ, RTE, CB         |
+     | 中文 | 单句话分类                | ChnSent, Amazon, TNews |
+     |      | 多选分类                  | CCPM, C3               |
+     |      | 句子间分类(Sentence Pair) | LCQMC, CMNLI, OCNLI    |
 
-6. Adapter
+7. Adapter
   - AdapterH：原始的Adapter
   - AdapterL
   - AdapterP
   - AdapterD
 
-7. PPT
-7. PEFT统一框架
+
+
+PEFT统一框架
+
+1. ` Towards a Unified View of Parameter-Efficient Transfer Learning`
+2. `UNIPELT: A Unified Framework for Parameter-Efficient Language Model Tuning`
+3. `Revisiting Parameter-Efficient Tuning: Are We Really There Yet?`
+4. `Sparse Structure Search for Parameter-Efficient Tuning`
+5. `Delta Tuning: A Comprehensive Study of Parameter Efficient Methods for Pre-trained Language Models`
 
 
 
