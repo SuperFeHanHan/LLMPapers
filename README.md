@@ -185,7 +185,6 @@ PEFT统一框架
    Liang P, Bommasani R, Lee T, et al. [[paper](https://arxiv.org/pdf/2211.09110.pdf)] [[project](https://github.com/stanford-crfm/helm)]
 
 
-
 3. `Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models` arxiv 2023
    Aarohi Srivastava, Abhinav Rastogi, Abhishek Rao, et al. [[paper](https://arxiv.org/abs/2206.04615)] [[project](https://github.com/google/BIG-bench)]
 
@@ -194,6 +193,9 @@ PEFT统一框架
 4. `PandaLM: Reproducible and Automated Language Model Assessment` GitHub 2023
    Wang Yidong, Yu Zhuohao, Zeng Zhengran, Yang Linyi, Heng Qiang, Wang Cunxiang, Chen Hao, Jiang Chaoya, Xie Rui, Wang Jindong, Xie Xing, Ye Wei, Zhang Shikun and Zhang Yue. [[project](https://github.com/WeOpenML/PandaLM)]
 
+## LLM and KG
+
+- [万字长文讲述大模型与知识图谱的关系](https://zhuanlan.zhihu.com/p/626433991)
 
 ## LLM带来的新方向
 
