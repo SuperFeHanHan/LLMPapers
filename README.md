@@ -12,6 +12,8 @@
 
 ## Base Models
 
+
+
 1. `LLaMA: Open and Efficient Foundation Language Models.` arxiv 2023
    Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, Naman Goyal, Eric Hambro, Faisal Azhar, Aurelien Rodriguez, Armand Joulin, Edouard Grave, Guillaume Lample. [[pdf]](https://arxiv.org/abs/2302.13971v1)
 
@@ -22,11 +24,30 @@
 
 3. `Opt-iml: Scaling language model instruction meta learning through the lens of generalization.` arxiv 202
    Srinivasan Iyer, Xi Victoria Lin, Ramakanth Pasunuru, Todor Mihaylov, Da ́niel Simig, Ping Yu, Kurt Shuster, Tianlu Wang, Qing Liu, Punit Singh Koura, et al. [[paper](https://arxiv.org/abs/2212.12017)]
-4. [ChatGLM: An Open Bilingual Dialogue Language Model](https://github.com/THUDM/ChatGLM-6B)
-5. [BLOOM: A 176B-Parameter Open-Access Multilingual Language Model](https://arxiv.org/abs/2211.05100)
-6. [FLAN: Scaling Instruction-Finetuned Language Models](https://arxiv.org/abs/2210.11416)
-7. [BELLE: Bloom-Enhanced Large Language model Engine](https://github.com/LianjiaTech/BELLE)
-8. [GPT4All: Training an Assistant-style Chatbot with Large Scale Data Distillation from GPT-3.5-Turbo](https://github.com/nomic-ai/gpt4all)
+
+4. `GLM: General Language Model Pretraining with Autoregressive Blank Infilling` ACP 2022
+
+   Zhengxiao Du, Yujie Qian, Xiao Liu, Ming Ding, Jiezhong Qiu, Zhilin Yang, Jie Tang [[GLM paper](https://arxiv.org/abs/2103.10360)] [[GLM-130B paper](https://arxiv.org/abs/2210.02414)] [[GLM project](https://github.com/THUDM/GLM)] [[GLM-130B project](https://github.com/THUDM/GLM-130B)]
+
+   GLM考虑的任务：
+
+   | 任务                | 数据集                        |
+   | ------------------- | ----------------------------- |
+   | SuperGLUE           |                               |
+   | Summarization       | CNN/DailyMail, XSum, Gigaword |
+   | Question Generation | SQuAD question generation     |
+   |                     | Yahoo text infilling          |
+   | Language Modeling   | Books&Wiki Test, LAMBADA      |
+
+5. [ChatGLM: An Open Bilingual Dialogue Language Model](https://github.com/THUDM/ChatGLM-6B)
+
+6. [BLOOM: A 176B-Parameter Open-Access Multilingual Language Model](https://arxiv.org/abs/2211.05100)
+
+7. [FLAN: Scaling Instruction-Finetuned Language Models](https://arxiv.org/abs/2210.11416)
+
+8. [BELLE: Bloom-Enhanced Large Language model Engine](https://github.com/LianjiaTech/BELLE)
+
+9. [GPT4All: Training an Assistant-style Chatbot with Large Scale Data Distillation from GPT-3.5-Turbo](https://github.com/nomic-ai/gpt4all)
 
 
 
@@ -158,7 +179,7 @@
 
 
 
-PEFT统一框架
+PEFT统一框架 ==TODO==
 
 1. ` Towards a Unified View of Parameter-Efficient Transfer Learning`
 2. `UNIPELT: A Unified Framework for Parameter-Efficient Language Model Tuning`
@@ -200,6 +221,12 @@ PEFT统一框架
 
 - [万字长文讲述大模型与知识图谱的关系](https://zhuanlan.zhihu.com/p/626433991)
 
+## 如何检测内容来自AI？
+
+
+
+
+
 ## LLM带来的新方向
 
 
@@ -231,6 +258,8 @@ PEFT统一框架
 
 
 # Tutorials
+
+- [LLM University by cohere](https://docs.cohere.com/docs/llmu)
 
 
 
