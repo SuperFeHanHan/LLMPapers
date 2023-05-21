@@ -196,9 +196,6 @@ PEFT统一框架
 4. `PandaLM: Reproducible and Automated Language Model Assessment` GitHub 2023
    Wang Yidong, Yu Zhuohao, Zeng Zhengran, Yang Linyi, Heng Qiang, Wang Cunxiang, Chen Hao, Jiang Chaoya, Xie Rui, Wang Jindong, Xie Xing, Ye Wei, Zhang Shikun and Zhang Yue. [[project](https://github.com/WeOpenML/PandaLM)]
 
-5. [Perspective API](https://perspectiveapi.com/)
-   - 用于模型Toxicity评估的API.
-
 ## LLM and KG
 
 - [万字长文讲述大模型与知识图谱的关系](https://zhuanlan.zhihu.com/p/626433991)
@@ -270,8 +267,15 @@ PEFT统一框架
 
 ## Tools
 
+训练模型：
+
 - [[peft](https://github.com/huggingface/peft)] from Huggingface🤗: 实现了LoRA, Prefix Tuning, P-Tuning, Prompt Tuning和AdaLoRA。
-- 
+
+
+
+评估模型表现：
+
+- [Perspective API](https://perspectiveapi.com/)：用于模型Toxicity评估的API。
 
 
 
